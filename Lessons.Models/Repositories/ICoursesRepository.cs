@@ -31,6 +31,6 @@ namespace Lessons.Models.Repositories
         /// обновление или создание нового курса
         /// </summary>
         /// <param name="course"> курс </param>
-        void Update(Course course) ;
+        void Update(Course course, string name) ;
     }
 }

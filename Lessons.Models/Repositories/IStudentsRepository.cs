@@ -30,8 +30,8 @@ namespace Lessons.Models.Repositories
         /// <summary>
         /// обновление или добавление студента
         /// </summary>
-        /// <param name="Student"> студент </param>
-        void Update(Student Student);
+        /// <param name="student"> студент </param>
+        void Update(Student student, string name);
     }
 }
 
