@@ -26,12 +26,12 @@ namespace Lessons.Models.Repositories
         /// удаление студента
         /// </summary>
         /// <param name="id"> номер студента </param>
-        void Delete(Guid id);
+        void Delete(Guid id) { }
         /// <summary>
         /// обновление или добавление студента
         /// </summary>
         /// <param name="student"> студент </param>
-        void Update(Student student, string name);
+        void Update(Student student, string name) {  }
     }
 }
 

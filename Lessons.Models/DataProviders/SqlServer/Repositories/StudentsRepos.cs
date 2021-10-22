@@ -12,6 +12,11 @@ namespace Lessons.Models.DataProviders.SqlServer.Repositories
     {
         LessonsContext context = new();
 
+        public StudentsRepos(LessonsContext context)
+        {
+            this.context = context;
+        }
+
         public IQueryable<Student> Items => context.Students;
 
         public void Delete(Guid id)

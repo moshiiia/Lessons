@@ -11,6 +11,12 @@ namespace Lessons.Models.DataProviders.SqlServer.Repositories
     public class CoursesRepos : ICoursesRepository
     {
         LessonsContext context = new();
+
+        public CoursesRepos(LessonsContext context)
+        {
+            this.context = context;
+        }
+
         //IQueryable<Student> students = new StudentsRepos().Items;
 
         public IQueryable<Course> Items => context.Courses;
